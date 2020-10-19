@@ -1,0 +1,31 @@
+.slider {
+    height: $slider-height;
+    width: $slider-width;
+    margin: 0 auto;
+
+    position: relative;
+
+    &__img-container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+
+        &--first {
+            width: 100%;
+        }
+
+        &--second {
+            width: 50%;
+        }
+    }
+
+
+
+    &__img {
+        height: 100%;
+        width: $slider-width;
+    }
+}

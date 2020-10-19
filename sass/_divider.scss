@@ -1,0 +1,33 @@
+.divider {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &__handle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: $divider-handle-size;
+        width: $divider-handle-size;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
+
+    &__arrow {
+        font-size: $divider-handle-arrow-size;
+        letter-spacing: 2px;
+    }
+}
